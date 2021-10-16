@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Usingeffect from './Usingeffect';
+import UsingRef from './UsingRef';
+import UsingState from './UsingState';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h4 style={{ textAlign: "left", color: "red" }}>using state</h4>
+      <UsingState />
+      <hr />
+      <h4 style={{ textAlign: "left", color: "red" }}>using effect</h4>
+
+      <Usingeffect />
+      <hr />
+      <h4 style={{ textAlign: "left", color: "red" }}>using ref</h4>
+
+      <UsingRef />
     </div>
   );
 }
